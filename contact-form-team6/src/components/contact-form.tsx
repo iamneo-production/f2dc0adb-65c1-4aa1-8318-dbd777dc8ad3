@@ -23,7 +23,7 @@ function ContactForm() {
   const [editModalOpen, setEditModalOpen] = useState(false);
 
   const fetchItems = async () => {
-    const response = await axios.get<Item[]>("https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contactDetails");
+    const response = await axios.get<Item[]>("https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contact");
     setItems(response.data);
   };
 
@@ -36,13 +36,13 @@ function ContactForm() {
     if (name.trim() === "") return;
 
     const newItem = { name: name, email: email, subject: subject, message: message };
-    await axios.post("https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contactDetails", newItem);
+    await axios.post("https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contact", newItem);
 
     fetchItems();
   };
 
   const deleteContact = async (id: number) => {
-    await axios.delete(`https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contactDetails/${id}`);
+    await axios.delete(`https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contact/${id}`);
     fetchItems();
   };
 
@@ -57,7 +57,7 @@ function ContactForm() {
     if (!selectedItem) return;
 
 
-    await axios.put(`https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contactDetails/${selectedItem.id}`, selectedItem);
+    await axios.put(`https://ide-edecaacdccfedcaeecccddcbdecaacaebdefcfda.premiumproject.examly.io/proxy/8081/contact/${selectedItem.id}`, selectedItem);
 
 
     setEditModalOpen(false);

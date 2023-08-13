@@ -1,12 +1,5 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "contactDetails": [
+  "contact": [
     {
       "name": "www",
       "email": "www",
@@ -35,15 +28,5 @@
       "message": "aaaaaa",
       "id": 6
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
