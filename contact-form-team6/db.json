@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contactDetails": [
+    {
+      "name": "www",
+      "email": "www",
+      "subject": "wwww",
+      "message": "www",
+      "id": 3
+    },
+    {
+      "name": "xasxa",
+      "email": "sxasc",
+      "subject": "ascasc",
+      "message": "ascac",
+      "id": 4
+    },
+    {
+      "name": "qqq",
+      "email": "qqq",
+      "subject": "qq",
+      "message": "qqq",
+      "id": 5
+    },
+    {
+      "name": "aaaaaa",
+      "email": "aaaaaa",
+      "subject": "aaaaaa",
+      "message": "aaaaaa",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
